@@ -1,0 +1,44 @@
+.categories {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__button-back {
+        background: none;
+        color: black;
+        border: none;
+        font-size: 16px;
+
+        &:hover {
+            transform: scale(1.1);
+            color: blue;
+        }
+    }
+    
+    & > ul {
+        display: flex;
+        padding-top: 24px;
+    }
+
+    & > ul > li {
+        padding-left: 10px;
+        list-style: none;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: blue;
+        }
+
+        &:active {
+            color: rgb(101, 101, 255);
+        }
+    }
+}
